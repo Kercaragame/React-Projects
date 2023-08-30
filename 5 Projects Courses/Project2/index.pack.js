@@ -496,7 +496,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = Card;
 
@@ -507,61 +507,61 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Card(props) {
-    var badgeText = void 0;
-    if (props.openSpots === 0) {
-        badgeText = "SOLD OUT";
-    } else if (props.location === "Online") {
-        badgeText = "ONLINE";
-    }
+  var badgeText = void 0;
+  if (props.openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (props.location === "Online") {
+    badgeText = "ONLINE";
+  }
 
-    return _react2.default.createElement(
-        "div",
-        { className: "card" },
-        badgeText && _react2.default.createElement(
-            "div",
-            { className: "card--badge" },
-            badgeText
-        ),
-        _react2.default.createElement("img", { src: "../images/" + props.coverImg, className: "card--image" }),
-        _react2.default.createElement(
-            "div",
-            { className: "card--stats" },
-            _react2.default.createElement("img", { src: "../images/star.png", className: "card--star" }),
-            _react2.default.createElement(
-                "span",
-                null,
-                props.stats.rating
-            ),
-            _react2.default.createElement(
-                "span",
-                { className: "gray" },
-                "(",
-                props.stats.reviewCount,
-                ") \u2022 "
-            ),
-            _react2.default.createElement(
-                "span",
-                { className: "gray" },
-                props.location
-            )
-        ),
-        _react2.default.createElement(
-            "p",
-            { className: "card--title" },
-            props.title
-        ),
-        _react2.default.createElement(
-            "p",
-            { className: "card--price" },
-            _react2.default.createElement(
-                "span",
-                { className: "bold" },
-                "From $",
-                props.price
-            ),
-            " / person"
-        )
-    );
+  return _react2.default.createElement(
+    "div",
+    { className: "card" },
+    badgeText && _react2.default.createElement(
+      "div",
+      { className: "card--badge" },
+      badgeText
+    ),
+    _react2.default.createElement("img", { src: "../images/" + props.coverImg, className: "card--image" }),
+    _react2.default.createElement(
+      "div",
+      { className: "card--stats" },
+      _react2.default.createElement("img", { src: "../images/star.png", className: "card--star" }),
+      _react2.default.createElement(
+        "span",
+        null,
+        props.stats.rating
+      ),
+      _react2.default.createElement(
+        "span",
+        { className: "gray" },
+        "(",
+        props.stats.reviewCount,
+        ") \u2022 "
+      ),
+      _react2.default.createElement(
+        "span",
+        { className: "gray" },
+        props.location
+      )
+    ),
+    _react2.default.createElement(
+      "p",
+      { className: "card--title" },
+      props.title
+    ),
+    _react2.default.createElement(
+      "p",
+      { className: "card--price" },
+      _react2.default.createElement(
+        "span",
+        { className: "bold" },
+        "frome $",
+        props.price
+      ),
+      " / person"
+    )
+  );
 }
 
 /***/ }),
